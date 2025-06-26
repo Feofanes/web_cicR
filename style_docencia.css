@@ -1,0 +1,263 @@
+
+/* ---------- HERO ---------- */
+
+.proyecto-hero {
+  height: 50vh;
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: white;
+}
+
+.proyecto-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.proyecto-hero > div {
+  z-index: 1;
+  position: relative;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  display: inline-block;
+}
+
+/* EFECTO PULSO */
+.proyecto-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(34, 7, 241, 0) 40%, rgba(255, 0, 132, 0.4) 100%);
+  opacity: 0.7;
+  animation: haloPulse 5s infinite ease-in-out;
+  z-index: 0.5;
+  pointer-events: none;
+}
+
+@keyframes haloPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 0.2; }
+}
+
+
+
+
+
+/* ---------- TEXTO HERO ---------- */
+
+.proyecto-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.proyecto-subtitulo {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+
+/* ---------- DESCRIPCIÓN ---------- */
+
+.proyecto-descripcion h2 {
+  color: #3a78b5;
+  padding-top: 3vh;
+
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.proyecto-descripcion h2::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #aebcd3;
+  margin-top: 8px;
+}
+
+.proyecto-descripcion p {
+  text-align: justify;
+}
+
+.page-container .titulo-derecha{
+  text-align: right;
+}
+
+
+
+
+
+
+/* 🎯 SVG HALLMARK PAGINA */
+.docencia-container {
+  display: flex;
+  align-items: stretch;
+  margin: 5rem auto;
+  padding: 0 2rem; /* mismos márgenes laterales que .page-container */
+  max-width: 1200px;
+  gap: 2rem;
+}
+
+.svg-container {
+  flex: 1;
+  max-width: 33.33%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-container svg {
+  width: 100%;
+  height: auto;
+  transform: none;
+  transform-origin: center center;
+  cursor: default;
+}
+
+.svg-container svg {
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+}
+
+
+
+/* ✋ Cursor mientras se arrastra */
+.svg-container.grabbing svg {
+  cursor: grabbing !important;
+}
+
+/* ✨ Hover en sectores */
+.hover {
+  fill-opacity: 0.6;
+  transition: fill 0.3s ease;
+  
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(58, 120, 181, 0.4);
+}
+
+/* ✅ Asegura eventos en sectores visibles del SVG */
+.svg-container g {
+  pointer-events: visiblePainted;
+}
+
+#hallmarks-svg {
+  transition: transform 1.5s ease-in-out;
+  transform-origin: center center;
+}
+
+.svg-container svg {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: white; /* solo si el SVG es transparente */
+}
+
+
+
+
+/* 📝 Panel informativo a la derecha */
+.info-container {
+  flex: 2;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+}
+
+.info-container h2{
+  font-weight: 600;
+}
+
+.info-container h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 8px;
+}
+
+
+
+/* 📦 Caja de contenido */
+.info-box {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-box h2 {
+  margin-top: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.info-box p {
+  text-align: justify;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+
+
+@media (max-width: 768px) {
+  .docencia-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .svg-container,
+  .info-container {
+    max-width: 100%;
+  }
+
+  .svg-container svg {
+    width: 100%;
+  }
+}
+
+
+/* COLORES DEL PANEL AL TOCAR LOS HALLMARKS */
+
+/* Colores del panel al hacer click */
+.info-box.hallmark-1 { background-color: #48B759; color: white; }
+.info-box.hallmark-2 { background-color: #442118; color: white; }
+.info-box.hallmark-3 { background-color: #6C0359; color: white; }
+
+.info-box.hallmark-4 { background-color: #CC2D8B; color: white; }
+.info-box.hallmark-5 { background-color: #567BBD; color: white; }
+.info-box.hallmark-6 { background-color: #E8892B; color: white; }
+
+.info-box.hallmark-7 { background-color: #FDCB27; color: white; }
+.info-box.hallmark-8 { background-color: #1C1F22; color: white; }
+.info-box.hallmark-9 { background-color: #EF5449; color: white; }
+
+.info-box.hallmark-10 { background-color: #75CDDA; color: white; }
+.info-box.hallmark-11 { background-color: #26247B; color: white; }
+.info-box.hallmark-12 { background-color: #6D6F75; color: white; }
+
+.info-box.hallmark-13 { background-color: #4E1F79; color: white; }
+.info-box.hallmark-14 { background-color: #80391D; color: white; }
+
+
+.info-box {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+

@@ -1,0 +1,107 @@
+
+
+/* Centrado de título h1 */
+.presentacion-container h1 {
+  text-align: center; /* ✅ CAMBIO: centrado */
+  font-size: 3rem;
+  margin-bottom: 2rem;
+
+  color: #3a78b5;                   /* 💠 Celeste profesional */
+  font-weight: 600;
+}
+
+/* 📏 Línea separadora bajo el h2 */
+.presentacion-container h1::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #aebcd3;
+  margin-top: 8px;
+}
+
+/* Imagen del científico */
+.presentacion-container img {
+  max-width: 100%; /* Que nunca se pase del tamaño del contenedor */
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados */
+  transition: transform 0.3s ease; /* ✅ Efecto visual al pasar el mouse */
+}
+
+/* Efecto al pasar el mouse sobre la imagen */
+.presentacion-container img:hover {
+  transform: scale(1.03); /* Le da un pequeño zoom al pasar el cursor */
+}
+
+/* Texto que aparece debajo de la imagen */
+.cargo {
+  font-weight: bold;
+  font-style: italic;
+  color: #555;
+}
+
+/* Títulos h2 */
+.presentacion-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+}
+
+/* Títulos h3 */
+.presentacion-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  
+}
+
+/* Texto de párrafo */
+.presentacion-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+#panel-boton {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ✅ CAMBIO: clase para justificar textos */
+.texto-justificado {
+  text-align: justify;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 576px) {
+  .presentacion-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .presentacion-container p {
+    font-size: 1rem;
+  }
+}
+
+/* BOTON PARA VOLVER A PAG DE SERVICIOS */
+
+.btn-volver {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0056b3;
+  background-color: #e6f0ff;
+  border: 1px solid #cce0ff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-volver:hover {
+  background-color: #d0e5ff;
+  color: #003b7a;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 86, 179, 0.2);
+}

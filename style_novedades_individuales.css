@@ -1,0 +1,83 @@
+
+/*--------------CONTENIDO PAGINA---------------*/
+
+/* 🎯 Estilo general del contenido */
+main.novedad-individual {
+  max-width: 800px;
+  margin: 4rem auto;
+ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* 🟦 Título de la noticia */
+.novedad-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3a78b5; /* Azul institucional */
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+/* 🕒 Fecha */
+.novedad-fecha {
+  display: block;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* 🖼️ Imagen destacada */
+.novedad-img {
+  width: 70%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ✍️ Cuerpo de la noticia */
+.novedad-texto p {
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.05rem;
+}
+
+/* 🔁 Responsive */
+@media (max-width: 576px) {
+  .novedad-titulo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .novedad-img {
+    max-height: 200px;
+  }
+
+  .novedad-texto p {
+    font-size: 1rem;
+  }
+}
+
+
+/* 🔙 Botón de regreso */
+.btn-volver {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #3a78b5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+  background-color: #2d5f8c;
+  text-decoration: none;
+}
+

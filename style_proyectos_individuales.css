@@ -1,0 +1,180 @@
+
+/* ---------- HERO ---------- */
+
+.proyecto-hero {
+  height: 70vh;
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: white;
+}
+
+.proyecto-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 0;
+}
+
+.proyecto-hero > div {
+  z-index: 1;
+  position: relative;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  display: inline-block;
+}
+
+/* ---------- TEXTO HERO ---------- */
+
+.proyecto-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.proyecto-subtitulo {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* ---------- DESCRIPCIÓN ---------- */
+
+.proyecto-descripcion h2 {
+  color: #3a78b5;
+
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.proyecto-descripcion h2::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #aebcd3;
+  margin-top: 8px;
+}
+
+.proyecto-descripcion p {
+  text-align: justify;
+}
+
+/* ---------- INFO RÁPIDA ---------- */
+
+.proyecto-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.proyecto-meta > div {
+  flex: 1 1 120px;
+  max-width: 220px;
+  font-size: 0.95rem;
+  background: #f8f9fa;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+/* ---------- GALERÍA ---------- */
+
+.proyecto-galeria img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  /* width: 100%; */
+  transition: transform 0.3s ease;
+}
+
+.proyecto-galeria img:hover {
+  transform: scale(1.03);
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 576px) {
+  .proyecto-titulo {
+    font-size: 1.75rem;
+  }
+
+  .proyecto-subtitulo {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* -------------CONTENIDO PRINCIPAL -------------*/
+
+/* 🎯 Estilo general del contenido */
+main.novedad-individual {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* 🟦 Título de la noticia */
+.novedad-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3a78b5; /* Azul institucional */
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+/* 🕒 Fecha */
+.novedad-fecha {
+  display: block;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* 🖼️ Imagen destacada */
+.novedad-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ✍️ Cuerpo de la noticia */
+.novedad-texto p {
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.05rem;
+}
+
+/* 🔁 Responsive */
+@media (max-width: 576px) {
+  .novedad-titulo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .novedad-img {
+    max-height: 200px;
+  }
+
+  .novedad-texto p {
+    font-size: 1rem;
+  }
+}
+
+

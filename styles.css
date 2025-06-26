@@ -1,0 +1,263 @@
+
+
+/*  ----------- CARRUSEL -----------  */
+/* 🎯 Contenedor general del carrusel */
+#carouselExampleCaptions {
+  margin-bottom: 100px;
+}
+
+/* 🖼 Forzamos altura consistente para todos los slides */
+.carousel-item {
+  height: 80vh; /* ✅ Altura reducida (podés ajustar a 40vh o 60vh) */
+  position: relative;
+}
+
+/* 📸 Imagen adaptada al tamaño del contenedor */
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* ✅ Recorta elegantemente */
+}
+
+/* 🌒 Oscurecimiento */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* 🎤 Textos del carrusel */
+.carousel-caption {
+  z-index: 2;
+  padding-bottom: 5vh;
+}
+
+.carousel-caption h5 {
+  font-size: 3vw;
+  font-weight: 600;
+  color: #fff;
+  font-style: normal;
+}
+
+.carousel-caption p {
+  font-size: 1.2vw;
+  color: #ddd;
+  font-style: normal;
+}
+
+.carousel-item::before {
+  transition: opacity 0.3s ease; /* 💫 Transición suave */
+}
+
+.carousel-item:hover::before {
+  opacity: 0.5; /* 🌒 Oscurece un poco más al pasar el cursor */
+}
+
+.carousel-caption a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;     /* ✅ Necesario para que scale funcione bien */
+  transition: transform 0.3s ease;
+}
+
+.carousel-caption a:hover {
+  transform: scale(1.05);    /* 🔍 Ligeramente más grande al pasar el mouse */
+}
+
+
+
+
+
+/* 🔁 Responsive */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 35vh;
+  }
+  .carousel-caption h5 {
+    font-size: 1.4rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item {
+    height: 30vh;
+  }
+  .carousel-caption h5 {
+    font-size: 1.1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/*  ----------- CARDS INVESTIGACION -----------  */
+
+/* 🃏 Contenedor visual de la card */
+
+.titulo_seccion {
+  margin-left: 2%;
+
+  color: #3a78b5;                   /* 💠 Celeste profesional */
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: left;
+  margin: 40px auto 20px auto;
+  padding: 0 20px;
+
+  position: relative;
+  width: 100%;
+}
+
+/* 📏 Línea separadora bajo el h2 */
+.titulo_seccion::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #aebcd3;
+  margin-top: 8px;
+}
+
+.card {
+  border-radius: 15px;              /* Bordes redondeados */
+  overflow: hidden;                 /* ✅ Esto asegura que la imagen no se salga */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+/* 📸 Imagen dentro de la card */
+.card img {
+  width: 100%;
+  height: 200px;                    /* ✅ Tamaño uniforme */
+  object-fit: cover;                /* ✅ Recorte elegante como máscara */
+  display: block;
+}
+
+/* 📦 Contenido textual */
+.card_contenido {
+  padding: 15px;
+}
+
+/* 🧠 Título dentro de la card */
+.card_contenido h5 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #325793;
+}
+
+/* 📝 Texto justificado */
+.card_contenido p {
+  text-align: justify;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+/* 🧲 Estilo del link contenedor de la card */
+.card-container a {
+  text-decoration: none;         /* ❌ Sin subrayado */
+  color: inherit;                /* ✅ Usa el color del texto de adentro */
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+/* 🎯 Efecto sutil al pasar el mouse */
+.card-container a:hover .card {
+  transform: scale(1.02);        /* ✅ Pequeño zoom elegante */
+}
+
+/* 🔧 ------------ CARDS DE NOVEDADES ----------*/
+
+/* 🔔 --------- NOVEDADES INSTITUCIONALES --------- */
+
+.container-cards.novedades {
+  padding: 0 1rem;
+}
+
+.container-cards.novedades .cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* 🃏 Cada card */
+.card-novedad {
+  flex: 1 1 calc(33.33% - 2rem);
+  max-width: calc(33.33% - 2rem);
+  min-width: 280px;
+}
+
+.card-novedad a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.card-novedad a:hover .card {
+  transform: scale(1.02);
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card_contenido {
+  padding: 15px;
+}
+
+.card_contenido h5 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #325793;
+  font-size: 1.1rem;
+}
+
+.card_contenido p {
+  text-align: justify;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.card_contenido time {
+  display: block;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .card-novedad {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .card-novedad {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+

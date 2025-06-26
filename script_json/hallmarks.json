@@ -1,0 +1,60 @@
+{
+  "hallmark-1": {
+    "titulo": "Señalización Proliferativa Sostenida",
+    "texto": "Las células cancerosas mantienen proliferación crónica mediante activación constante de vías de crecimiento. Desarrollan autosuficiencia produciendo factores de crecimiento autócrinos, sobreexpresando receptores o alterando vías de señalización intracelular. Esta independencia de señales externas elimina controles críticos del desarrollo normal, resultando en crecimiento celular incontrolable y patológico que caracteriza la transformación maligna."
+  },
+  "hallmark-2": {
+    "titulo": "Evasión de Supresores de Crecimiento",
+    "texto": "Las células cancerosas evaden mecanismos normales que suprimen el crecimiento, particularmente genes supresores como p53 y Rb. Estos 'frenos moleculares' se inactivan por mutaciones, deleciones o silenciamiento epigenético, permitiendo división celular continua incluso con anomalías presentes. La pérdida de estos supresores es especialmente evidente en la inactivación de vías p53 y Rb que coordinan detención del ciclo celular y reparación del ADN."
+  },
+  "hallmark-3": {
+    "titulo": "Reprogramación Epigenética No Mutacional",
+    "texto": "Los cambios epigenéticos independientes de mutaciones pueden impulsar capacidades cancerosas. Factores del microambiente como hipoxia y rigidez tisular inducen modificaciones epigenéticas globales incluyendo metilación del ADN y modificaciones de histonas. Estos cambios crean heterogeneidad fenotípica intratumoral y estados epigenéticos persistentes. También afectan células estromales, convirtiendo células normales en facilitadoras tumorales. Representa mecanismo adicional de evolución tumoral complementando inestabilidad genómica."
+  },
+  
+  "hallmark-4": {
+    "titulo": "Evasión de la Destrucción Inmune",
+    "texto": "Las células cancerosas desarrollan estrategias múltiples para evadir vigilancia inmune. Incluyen reducción de presentación de antígenos, secreción de factores inmunosupresores como TGF-β, y reclutamiento de células inmunes reguladoras. Expresan ligandos de puntos de control como PD-L1 que inactivan células T. Crean microambiente tumoral inmunosupresor convirtiendo células inmunes efectoras en promotoras tumorales. Esta evasión es crucial para supervivencia tumoral."
+  },
+  "hallmark-5": {
+    "titulo": "Potencial Replicativo Ilimitado",
+    "texto": "Las células normales tienen capacidad limitada de división por acortamiento de telómeros. Las células cancerosas superan esta limitación reactivando telomerasa o mediante mecanismos alternativos de alargamiento telomérico. Esta capacidad permite división indefinida, proporcionando tiempo necesario para acumular múltiples mutaciones requeridas para transformación maligna completa. La inmortalización replicativa es esencial para desarrollo de tumores grandes y capacidad metastásica."
+  },
+  "hallmark-6": {
+    "titulo": "Inflamación que Promueve Tumores",
+    "texto": "La inflamación crónica crea microambiente favorable al cáncer a través de múltiples mecanismos. Mediadores como NF-κB, STAT3, y TNF-α orquestan respuestas promotoras de supervivencia, angiogénesis, e invasión. Los macrófagos asociados secretan factores de crecimiento y enzimas degradativas. La inflamación induce daño al ADN y estimula proliferación, estableciendo ciclos de retroalimentación donde células cancerosas promueven inflamación que facilita progresión tumoral."
+  },
+  "hallmark-7": {
+    "titulo": "Microbiomas Polimórficos",
+    "texto": "Los microbiomas tisulares influyen significativamente en desarrollo y progresión del cáncer. La variabilidad polimórfica en composición microbiana tiene efectos protectores o deletéreos en carcinogénesis. Ciertos microorganismos promueven inflamación crónica, producen metabolitos genotóxicos, o alteran metabolismo facilitando transformación maligna. Otros tienen efectos protectores modulando respuestas inmunes. Los microbiomas también influyen en respuesta terapéutica, sugiriendo manipulación microbiana como estrategia terapéutica."
+  },
+  "hallmark-8": {
+    "titulo": "Activación de Invasión y Metástasis",
+    "texto": "La capacidad de invadir tejidos y formar metástasis representa la característica más letal del cáncer. Involucra pérdida de adhesión celular, degradación de matriz extracelular, y motilidad aumentada. La transición epitelio-mesenquimal facilita migración e invasión. Las células secretan enzimas proteolíticas para degradar barreras tisulares. La metástasis exitosa requiere supervivencia en ambientes hostiles y establecimiento de nichos premetastásicos en órganos distantes."
+  },
+  "hallmark-9": {
+    "titulo": "Angiogénesis",
+    "texto": "Los tumores requieren suministro constante de oxígeno y nutrientes para crecer más allá de pocos milímetros. Las células cancerosas activan el 'interruptor angiogénico' secretando factores proangiogénicos como VEGF y suprimiendo inhibidores angiogénicos. Este proceso facilita crecimiento tumoral y metástasis al proporcionar rutas circulatorias. La angiogénesis tumoral resulta en vasos estructural y funcionalmente anómalos, contribuyendo a hipoxia intratumoral."
+  },
+  "hallmark-10": {
+    "titulo": "Células Senescentes",
+    "texto": "Las células senescentes en el microambiente tumoral pueden suprimir o promover cáncer paradójicamente. Secretan el fenotipo secretor asociado a senescencia (SASP) incluyendo citoquinas, factores de crecimiento, y proteasas que promueven inflamación, angiogénesis, e invasión. Pueden originarse de diversos tipos celulares incluyendo fibroblastos y células inmunes. La acumulación de células senescentes contribuye a resistencia terapéutica y recurrencia tumoral, representando componente funcionalmente importante del desarrollo canceroso."
+  },
+  "hallmark-11": {
+    "titulo": "Inestabilidad Genómica y Mutación",
+    "texto": "La inestabilidad genómica acelera adquisición de otros hallmarks aumentando tasas de mutación. Se manifiesta como alteraciones cromosómicas, mutaciones puntuales, y reordenamientos genómicos. Resulta de defectos en reparación del ADN, puntos de control comprometidos, o estrés replicativo. Impulsa tumorigenesis inicial y progresión mediante selección clonal de células más agresivas. Contribuye a heterogeneidad intratumoral, complicando estrategias de tratamiento."
+  },
+  "hallmark-12": {
+    "titulo": "Resistencia a la Muerte Celular",
+    "texto": "Las células malignas resisten la apoptosis o muerte celular programada que normalmente elimina células dañadas. Desarrollan estrategias múltiples incluyendo sobreexpresión de proteínas antiapoptóticas como Bcl-2, inactivación de proteínas proapoptóticas como p53, y alteración de vías de señalización de muerte. Esta resistencia permite supervivencia de células con daño genético severo, facilitando acumulación de mutaciones adicionales y resistencia terapéutica."
+  },
+  "hallmark-13": {
+    "titulo": "Reprogramación del Metabolismo Celular",
+    "texto": "Las células cancerosas alteran fundamentalmente su metabolismo para satisfacer demandas energéticas del crecimiento acelerado. El cambio más notable es hacia glucólisis aeróbica (efecto Warburg), utilizando glucólisis incluso con oxígeno suficiente. Esta reprogramación proporciona energía y bloques de construcción para síntesis de macromoléculas. También alteran metabolismo de aminoácidos y lípidos, creando vulnerabilidades terapéuticas específicas que pueden ser explotadas."
+  },
+  "hallmark-14": {
+    "titulo": "Desbloqueo de la Plasticidad Fenotípica",
+    "texto": "La plasticidad fenotípica permite escape de estados de diferenciación terminal y adopción de estados alternativos facilitadores de tumorigenesis. Opera mediante desdiferenciación hacia estados progenitores, bloqueo de diferenciación, y transdiferenciación hacia linajes alternativos. Incluye pérdida de factores como HOXA5, bloqueo en leucemias, y transdiferenciación pancreática. Facilita iniciación tumoral y resistencia terapéutica permitiendo adopción de estados resistentes a tratamientos específicos."
+  }
+ 
+}

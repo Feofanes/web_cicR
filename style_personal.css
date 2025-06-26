@@ -1,0 +1,73 @@
+
+
+/* Centrado de título h1 */
+.personal-container h1 {
+  text-align: center; /* ✅ CAMBIO: centrado */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+
+  color: #3a78b5;                   /* 💠 Celeste profesional */
+  font-weight: 600;
+}
+
+
+
+/* 📌 Línea separadora */
+.separador-seccion {
+  border: none;
+  height: 4px;
+  background-color: #aebcd3;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+/* 🧑‍🎓 Imagen de perfil pequeña */
+.personal-foto {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.personal-foto:hover {
+  transform: scale(1.05);
+}
+
+/* 📛 Nombre */
+.personal-nombre {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  /*color: #3a78b5;*/
+  color: #1f2020;
+}
+
+/* 🏷️ Cargo */
+.personal-cargo {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.25rem;
+}
+
+/* ✉️ Email */
+.personal-email {
+  color: #0056b3;
+  text-decoration: none;
+}
+.personal-email:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .personal-foto {
+    width: 60px;
+    height: 60px;
+  }
+  .personal-nombre {
+    font-size: 1rem;
+  }
+}
+
+
