@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--    FAVICON     -->
+    <link rel="icon" href="./resources/Fav/fav_borde_cicr.ico" />
+
+    <title>Centro de Investigación del Cáncer de Rosario</title>
+
+    <!--    BOOTSTRAP Estilos   (cdn CSS)-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!--   ESTILOS  -->
+    <link href="./style_proyectos_individuales.css" rel="stylesheet" />
+    <link href="./style_navbar-footer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--    BARRA   -->
+    <header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <!-- Logos institucionales -->
+ <a class="navbar-brand" href="./index.html">
+  <div class="logo-rotatorio">
+    <img src="./resources/logo_cicr/cicr_gif_ext.gif" alt="CICR" class="logo-img active">
+    <img src="./resources/img/logo_cipreb.png" alt="CIPReB" class="logo-img">
+  </div>
+</a>
+
+      <!-- Botón para colapsar navbar en móviles -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Contenido del menú -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Dropdown Presentación -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPresentacion" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Presentación
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownPresentacion">
+              <li><a class="dropdown-item" href="./presentacion.html">Autoridades</a></li>
+              <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="./personal.html">Personal</a></li>
+              <li><a class="dropdown-item" href="./novedades.html">Novedades</a></li>
+            </ul>
+          </li>
+
+          <!-- Dropdown Servicios -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicios">
+              <li><a class="dropdown-item" href="./servicio_microscopia.html">Microscopía</a></li>
+              <li><a class="dropdown-item" href="./servicio_inVitro.html">Ensayos in vitro</a></li>
+              <li><a class="dropdown-item" href="./servicio_inVivo.html">Ensayos in vivo</a></li>
+              <li><a class="dropdown-item" href="./servicio_personalizados.html">Proyectos personalizados</a></li>
+              <li><a class="dropdown-item" href="./servicio_SPF.html">Modelos SPF</a></li>
+            </ul>
+          </li>
+
+
+          <!-- Dropdown Investigación -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownInvestigacion" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Investigación
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownInvestigacion">
+              <li><a class="dropdown-item" href="./proyectos.html">Proyectos</a></li>
+              <li><a class="dropdown-item" href="./recursos-humanos.html">Recursos Humanos</a></li>
+              <li><a class="dropdown-item" href="./docencia.html">Docencia</a></li>
+              <li><a class="dropdown-item" href="./divulgacion.html">Divulgación</a></li>
+            </ul>
+          </li>
+
+          <!-- Contacto -->
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- Buscador -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- CONTENIDO PRINCIPAL DE LA PAGINA -->
+
+<main class="container proyecto-container py-5 con-navbar-fija page-container">
+
+  <!-- Hero Section con imagen fija y contenido encima -->
+<div class="proyecto-hero d-flex align-items-center justify-content-center text-center text-white"
+style="background-image: url('./resources/img/area_investigacion/Rac.jpg');">
+
+  <div>
+    <h1 class="proyecto-titulo">GTPasas Rac1</h1>
+    <h2 class="proyecto-subtitulo">GTPasas como reguladoras clave en la resistencia</h2>
+  </div>
+</div>
+
+
+
+
+
+  <!-- Info rápida -->
+  <div class="row proyecto-meta mb-4">
+    <div class="col-6 col-md-3"><strong>Fecha:</strong> 2024-actualidad</div>
+    <div class="col-6 col-md-3"><strong>Líder:</strong> Dr. Menacho Marquez, M</div>
+    <div class="col-6 col-md-3"><strong>Institución:</strong> CICR - IDICER-CONICET</div>
+    
+  </div>
+
+  <!-- Descripción -->
+  <section class="proyecto-descripcion mb-5">
+    <h2>Resumen del proyecto</h2>
+    <p class="texto-justificado">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Vestibulum fringilla pede sit amet augue. In turpis. Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Nullam sagittis. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Ut varius tincidunt libero. Phasellus dolor. Maecenas vestibulum mollis</p>
+  </section>
+
+  <!-- Galería -->
+  <section class="proyecto-galeria mb-5">
+    <div class="row g-3">
+      <div class="col-6 col-md-4"><img src="/resources/img/area_investigacion/gtpase_family.png" 
+        class="img-fluid rounded"
+        loading="lazy"/></div>
+      <div class="col-6 col-md-4"><img src="/resources/img/area_investigacion/cascada_mets.png" 
+        class="img-fluid rounded"
+        loading="lazy"/></div>
+      <div class="col-6 col-md-4"><img src="/resources/img/area_investigacion/Rac.jpg" 
+        class="img-fluid rounded"
+        loading="lazy"/></div>
+    </div>
+  </section>
+
+  
+  <!-- BOTON VOLVER -->
+  <div class="text-center pb-4">
+  <a href="./proyectos.html" class="btn-volver">
+    ← Volver a proyectos
+  </a>
+</div>
+
+
+</main>
+
+
+
+    <!-- 🦶 PIE DE PÁGINA: contacto, logo, redes y mapa -->
+    <!-- FOOTER  -->
+
+    <footer class="footer text-center text-lg-start bg-light mt-5 pt-4">
+      <!-- Cuerpo del footer en 4 columnas -->
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- 🟨 Columna 1: Contacto -->
+          <div
+            class="col-12 col-md-3 mb-4 d-flex flex-column align-items-center align-items-md-start"
+          >
+            <h5 class="footer-title">Contacto</h5>
+            <p class="mb-1">📞 (0341) 123-4567</p>
+            <p class="mb-1">
+              ✉️
+              <a href="mailto:contacto@instituto.org" class="footer-link"
+                >contacto@instituto.org</a
+              >
+              <!-- ✅ CAMBIO -->
+            </p>
+            <a
+              href="https://www.instagram.com/cic.cipreb/"
+              target="_blank"
+              class="social-icon mt-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+                height="25"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- 🟦 Columna 2: Secciones -->
+          <div
+            class="col-12 col-md-3 mb-4 d-flex flex-column align-items-center align-items-md-start"
+          >
+            <h5 class="footer-title">Secciones</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="presentacion.html">Presentación</a></li>
+              <li><a href="./servicios.html">Servicios</a></li>
+              <li><a href="./proyectos.html">Investigación</a></li>
+            </ul>
+          </div>
+
+          <!-- 🟩 Columna 3: Mapa -->
+          <div
+            class="col-12 col-md-3 mb-4 d-flex flex-column align-items-center align-items-md-start"
+          >
+            <h5 class="footer-title">Mapa</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.4445905000134!2d-60.66787682455569!3d-32.93926957359619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab237492cd59%3A0xad9e0f2012e970c0!2sFacultad%20de%20Medicina%20UNR!5e0!3m2!1ses!2sar!4v1713736609872!5m2!1ses!2sar"
+              width="100%"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- 🟥 Columna 4: Vínculos institucionales -->
+          <div
+            class="col-12 col-md-3 mb-4 d-flex flex-column align-items-center align-items-md-start"
+          >
+            <h5 class="footer-title">Vínculos institucionales</h5>
+
+            <!-- ✅ CONTENEDOR FLEXIBLE DE LOGOS -->
+            <div class="footer-logo-grid mt-2">
+              <a href="https://fcm.unr.edu.ar/" target="_blank">
+                <img
+                  src="./resources/img/Logos/logo_fcm.png"
+                  alt="Logo FCM UNR"
+                  class="footer-logo-multiple"
+                />
+              </a>
+              <a href="https://www.cicancer.org/" target="_blank">
+                <img
+                  src="./resources/img/Logos/cic_salamanca.png"
+                  alt="Logo CIC Salamanca"
+                  class="footer-logo-multiple"
+                />
+              </a>
+               </a>
+              <a href="https://www.rosario-conicet.gov.ar/investigacion/idicer" target="_blank">
+                <img
+                  src="./resources/img/Logos/idicer_logo.png"
+                  alt="Logo IDICER-CONICET"
+                  class="footer-logo-multiple"
+                />
+              </a>
+              <!-- Puedes seguir agregando más logos aquí y se alinearán automáticamente -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Línea de cierre -->
+      <hr class="my-0" />
+
+      <!-- Pie final -->
+      <div class="text-center p-3 bg-secondary text-white">
+        © 2025 Instituto Científico CIPReB & CICR - Todos los derechos
+        reservados
+      </div>
+    </footer>
+
+    <!--    BOOTSTRAP   (cdn JS)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+      <script src="./script_js/logo_rotativo.js"></script> 
+  </body>
+</html>

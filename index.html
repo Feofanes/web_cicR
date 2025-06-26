@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--    FAVICON     -->
+    <link rel="icon" href="./resources/Fav/fav_borde_cicr.ico" />
+
+    <title>Centro de Investigación del Cáncer de Rosario</title>
+
+    <!--    BOOTSTRAP Estilos   (cdn CSS)-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!--   ESTILOS  -->
+    <link href="./styles.css" rel="stylesheet" />
+    <link href="./style_navbar-footer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--    BARRA   -->
+    <header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+
+      <!-- Logos institucionales -->
+<a class="navbar-brand" href="./index.html">
+  <div class="logo-rotatorio">
+    <img src="./resources/logo_cicr/cicr_gif_ext.gif" alt="CICR" class="logo-img active">
+    <img src="./resources/img/logo_cipreb.png" alt="CIPReB" class="logo-img">
+  </div>
+</a>
+
+      <!-- Botón para colapsar navbar en móviles -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Contenido del menú -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Dropdown Presentación -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPresentacion" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Presentación
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownPresentacion">
+              <li><a class="dropdown-item" href="./presentacion.html">Autoridades</a></li>
+              <li><a class="dropdown-item" href="./historia.html">Historia</a></li>
+              <li><a class="dropdown-item" href="./personal.html">Personal</a></li>
+              <li><a class="dropdown-item" href="./novedades.html">Novedades</a></li>
+            </ul>
+          </li>
+
+          <!-- Dropdown Servicios -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownServicios">
+              <li><a class="dropdown-item" href="./servicio_microscopia.html">Microscopía</a></li>
+              <li><a class="dropdown-item" href="./servicio_inVitro.html">Ensayos in vitro</a></li>
+              <li><a class="dropdown-item" href="./servicio_inVivo.html">Ensayos in vivo</a></li>
+              <li><a class="dropdown-item" href="./servicio_personalizados.html">Proyectos personalizados</a></li>
+              <li><a class="dropdown-item" href="./servicio_SPF.html">Modelos SPF</a></li>
+            </ul>
+          </li>
+
+
+          <!-- Dropdown Investigación -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownInvestigacion" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Investigación
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownInvestigacion">
+              <li><a class="dropdown-item" href="./proyectos.html">Proyectos</a></li>
+              <li><a class="dropdown-item" href="./recursos-humanos.html">Recursos Humanos</a></li>
+              <li><a class="dropdown-item" href="./docencia.html">Docencia</a></li>
+              <li><a class="dropdown-item" href="./divulgacion.html">Divulgación</a></li>
+            </ul>
+          </li>
+
+          <!-- Contacto -->
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- Buscador -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class= "con-navbar-fija">
+
+    <!--    CARRUSEL    -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+     <!-- 🔁 Indicadores corregidos -->
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button> <!-- ✅ este faltaba -->
+</div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./resources/img/servicios/fluoro.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <a href="./servicio_microscopia.html">
+              <h5>Microscopía de fluorescencia</h5>
+              <p>Servicio de microscopía de fluorescente y confocal</p>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./resources/img/servicios/in_vitro.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <a href="./servicio_inVitro.html">
+              <h5>Ensayos in vitro</h5>
+              <p>
+                Servicio de ensayos in vitro, biologia celular y molecular
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./resources/img/servicios/raton.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <a href="./servicio_inVivo.html">
+              <h5>Modelos animales</h5>
+              <p>
+                Producción de Reactivos Biológicos
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./resources/img/servicios/SPF.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <a href="./servicio_SPF.html">
+              <h5>Modelos SPF</h5>
+              <p>
+                Servicio de modelos SPF
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./resources/img/servicios/proy_personalizado.png"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <a href="./servicio_personalizados.html">
+              <h5>Servicios a medida</h5>
+              <p>Diseño de servicios personalizados</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!--  ---------------------- CARDS NOVEDADES ---------------->
+
+    <section class=" page-container">
+
+<div class="container-cards novedades">
+
+  <h2 class="titulo_seccion">Novedades Institucionales</h2>
+  <div class="cards-row">
+
+    <div id="novedades-home" class="cards-row"></div>
+  
+  
+  </div>
+</div>
+
+
+
+
+
+    <!--    CARDS INVESTIGACION    -->
+
+    <div>
+      <h2 class="titulo_seccion">Área de Investigación</h2>
+
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="card-container m-3">
+            <a href="/proyecto_vav.html">
+              <div class="card">
+                <img src="./resources/img/area_investigacion/vav_3d.jpg" />
+                <div class="card_contenido">
+                  <h5>Proteinas VAV en melanoma</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente, nobis autem. Quibusdam sequi eaque aperiam?
+                    Voluptatem inventore enim magni consequatur!
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card-container m-3">
+            <a href="/proyecto_sinucleinas.html">
+              <div class="card">
+                <img src="./resources/img/area_investigacion/modelo 3d 1.2_Mesa de trabajo 1.png" />
+                <div class="card_contenido">
+                  <h5>Entre el Parkinson y el cáncer</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente, nobis autem. Quibusdam sequi eaque aperiam?
+                    Voluptatem inventore enim magni consequatur!
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card-container m-3">
+            <a href="./proyecto_rac1.html">
+              <div class="card">
+                <img src="./resources/img/area_investigacion/Rac.jpg" />
+                <div class="card_contenido">
+                  <h5>GTPasas, clave en quimioterapias</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente, nobis autem. Quibusdam sequi eaque aperiam?
+                    Voluptatem inventore enim magni consequatur!
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </section>
+
+    </main>
+
+    <!-- 🦶 PIE DE PÁGINA: contacto, logo, redes y mapa -->
+    <!-- FOOTER  -->
+
+    <footer class="footer text-center text-lg-start bg-light mt-5 pt-4">
+      <!-- Cuerpo del footer en 4 columnas -->
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <!-- 🟨 Columna 1: Contacto -->
+          <div
+            class="col-12 col-md-3 mb-4 d-flex flex-column align-items-center align-items-md-start"
+          >
+            <h5 class="footer-title">Contacto</h5>
+            <p class="mb-1">📞 (0341) 123-4567</p>
+            <p class="mb-1">
+              ✉️
+              <a href="mailto:contacto@instituto.org" class="footer-link"
+                >contacto@instituto.org</a
+              >
+              <!-- ✅ CAMBIO -->
+            </p>
+            <a
+              href="https://www.instagram.com/cic.cipreb/"
+              target="_blank"
+              class="social-icon mt-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-instagram"
+                viewBox="0 0 16 16"
+                height="25"
+              >
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- 🟦 Columna 2: Secciones -->
+          <div
+            class="col-12 col-md-3 mb-4 d-flex flex-column align-items-center align-items-md-start"
+          >
+            <h5 class="footer-title">Secciones</h5>
+            <ul class="list-unstyled footer-links">
+              <li><a href="presentacion.html">Presentación</a></li>
+              <li><a href="./servicios.html">Servicios</a></li>
+              <li><a href="./proyectos.html">Investigación</a></li>
+            </ul>
+          </div>
+
+          <!-- 🟩 Columna 3: Mapa -->
+          <div
+            class="col-12 col-md-3 mb-4 d-flex flex-column align-items-center align-items-md-start"
+          >
+            <h5 class="footer-title">Mapa</h5>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.4445905000134!2d-60.66787682455569!3d-32.93926957359619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab237492cd59%3A0xad9e0f2012e970c0!2sFacultad%20de%20Medicina%20UNR!5e0!3m2!1ses!2sar!4v1713736609872!5m2!1ses!2sar"
+              width="100%"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- 🟥 Columna 4: Vínculos institucionales -->
+          <div
+            class="col-12 col-md-3 mb-4 d-flex flex-column align-items-center align-items-md-start"
+          >
+            <h5 class="footer-title">Vínculos institucionales</h5>
+
+            <!-- ✅ CONTENEDOR FLEXIBLE DE LOGOS -->
+            <div class="footer-logo-grid mt-2">
+              <a href="https://fcm.unr.edu.ar/" target="_blank">
+                <img
+                  src="./resources/img/Logos/logo_fcm.png"
+                  alt="Logo FCM UNR"
+                  class="footer-logo-multiple"
+                />
+              </a>
+              <a href="https://www.cicancer.org/" target="_blank">
+                <img
+                  src="./resources/img/Logos/cic_salamanca.png"
+                  alt="Logo CIC Salamanca"
+                  class="footer-logo-multiple"
+                />
+              </a>
+               </a>
+              <a href="https://www.rosario-conicet.gov.ar/investigacion/idicer" target="_blank">
+                <img
+                  src="./resources/img/Logos/idicer_logo.png"
+                  alt="Logo IDICER-CONICET"
+                  class="footer-logo-multiple"
+                />
+              </a>
+              <!-- Puedes seguir agregando más logos aquí y se alinearán automáticamente -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Línea de cierre -->
+      <hr class="my-0" />
+
+      <!-- Pie final -->
+      <div class="text-center p-3 bg-secondary text-white">
+        © 2025 Instituto Científico CIPReB & CICR - Todos los derechos
+        reservados
+      </div>
+    </footer>
+
+    <!--    BOOTSTRAP   (cdn JS)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  SCRIPTS  -->
+<script src="./script_js/novedades_institucionales.js"></script> 
+<script src="./script_js/logo_rotativo.js"></script> 
+
+
+  </body>
+</html>
